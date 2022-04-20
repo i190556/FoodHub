@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ImageView fitHeight="638.0" fitWidth="937.0" layoutX="-1.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../patrick-fore-hoxqcGUheeo-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="26.0" prefHeight="111.0" prefWidth="397.0" text="🅕🅞🅞🅓 🅗🅤🅑" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="54.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="103.0" text="Appeasing Your Appetite" textFill="WHITE">
+         <font>
+            <Font name="Segoe Print Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="Customer" layoutX="300.0" layoutY="363.0" mnemonicParsing="false" onAction="#Login" prefHeight="111.0" prefWidth="114.0" style="-fx-background-color: dark grey;" textFill="#ef0000">
+         <graphic>
+            <ImageView fitHeight="108.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../cust.jpg" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="Owner" layoutX="54.0" layoutY="363.0" mnemonicParsing="false" onAction="#Login_Owner" prefHeight="116.0" prefWidth="124.0" style="-fx-background-color: dark grey;">
+         <graphic>
+            <ImageView fitHeight="105.0" fitWidth="334.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../manager4.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="310.0" layoutY="479.0" text="Customer" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Medium" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="479.0" text="Owner" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Medium" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="240.0" prefHeight="96.0" prefWidth="372.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="70.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

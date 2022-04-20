@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="485.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="826.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../kelly-sikkema-D6AlacFwS_Q-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="186.0" layoutY="124.0" text="Day">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="124.0" text="Date">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="468.0" layoutY="124.0" text="Number of Sales">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="629.0" layoutY="124.0" text="Revenue">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="156.0" text="Monday">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="197.0" text="Tuesday">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="241.0" text="Wednesday">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="172.0" layoutY="284.0" text="Thursday">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="156.0" text="22/02/22">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="197.0" text="23/02/22">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="241.0" text="24/02/22">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="284.0" text="25/02/22">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="156.0" text="15">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="197.0" text="24">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="511.0" layoutY="241.0" text="21">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="284.0" text="23">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="634.0" layoutY="156.0" text="RS 9000">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="197.0" text="RS 16500">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="241.0" prefHeight="16.0" prefWidth="58.0" text="RS 15000">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="284.0" text="RS 17500">
+         <font>
+            <Font name="Serif Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
