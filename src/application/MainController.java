@@ -61,6 +61,12 @@ public class MainController {
 	@FXML
 	public Button View_Sales;
 	
+	@FXML
+	public Button customer_review;
+	
+	
+	@FXML
+	public Button feedback_submitted;
 	
 	
 	@FXML
@@ -283,6 +289,42 @@ public class MainController {
 	    }
 	
 	
+
+	@FXML
+	 public void customer_review() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) customer_review.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("Customer_Review.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	
+
+	@FXML
+	 public void Feedback_Submitted() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) feedback_submitted.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("Feedback_Submitted.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
 	
 	
 }
