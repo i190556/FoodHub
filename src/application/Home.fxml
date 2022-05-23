@@ -43,7 +43,7 @@
             <Font name="Serif Bold" size="17.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="PROFILE" textFill="WHITE">
+      <Button fx:id="view_cust_profile" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#view_cust_profile" style="-fx-background-color: transparent;" text="PROFILE" textFill="WHITE">
          <font>
             <Font name="Serif Bold" size="17.0" />
          </font>

@@ -70,6 +70,51 @@ public class MainController {
 	
 	
 	@FXML
+	public Button view_cust_profile;
+	
+	@FXML
+	public Button update_cust_profile;
+	
+	@FXML
+	public Button cust_update;
+	
+	
+	@FXML
+	public Button view_owner_profile;
+	
+
+	@FXML
+	public Button update_owner_profile;
+	
+
+	@FXML
+	public Button owner_update;
+	
+	
+	@FXML
+	public Button view_business_profile;
+	
+
+	@FXML
+	public Button update_b_profile;
+	
+
+	@FXML
+	public Button b_update;
+	
+	
+
+	@FXML
+	public Button b_open;
+	
+
+	@FXML
+	public Button b_close;
+	
+	
+	
+	
+	@FXML
 	public TextField Username;
 	@FXML
 	public TextField Password;
@@ -326,5 +371,197 @@ public class MainController {
 	
 	    }
 	
+	@FXML
+	 public void view_cust_profile() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) view_cust_profile.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("View_Cust_Profile.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	@FXML
+	 public void update_cust_profile() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) update_cust_profile.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("Customer_update.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	
+	@FXML
+	 public void cust_update() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) cust_update.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("c_update_success.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	
+	@FXML
+	 public void view_owner_profile() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) view_owner_profile.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("View_Owner_Profile.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	@FXML
+	 public void update_owner_profile() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) update_owner_profile.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("Owner_update.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	
+	@FXML
+	 public void owner_update() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) owner_update.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("o_update_success.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	@FXML
+	 public void view_business_profile() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) view_business_profile.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("View_B_Profile.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	@FXML
+	 public void update_b_profile() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) update_b_profile.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("B_update.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	
+	@FXML
+	 public void b_update() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) b_update.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("B_update_success.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+	
+
+	@FXML
+	 public void b_open() throws Exception 
+		{
+	
+		
+		Stage stage = (Stage) b_open.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("Store_open.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+
+	@FXML
+	 public void b_close() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) b_close.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("Store_Close.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
 	
 }

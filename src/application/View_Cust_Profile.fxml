@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="485.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="826.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../kelly-sikkema-0KE2UZWeV2Q-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="621.0" layoutY="14.0" prefHeight="36.0" prefWidth="190.0" text="🅕🅞🅞🅓 🅗🅤🅑">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8105263113975525" green="0.743282675743103" blue="0.5583625435829163" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8736842274665833" green="0.5820246934890747" blue="0.2006237804889679" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="313.0" layoutY="71.0" mnemonicParsing="false" prefHeight="109.0" prefWidth="297.0" style="-fx-background-color: transparent;" text="YOUR PROFILE">
+         <font>
+            <Font name="Serif Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="325.0" layoutY="190.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="106.0" style="-fx-background-color: transparent;" text="NAME:">
+         <font>
+            <Font name="Serif Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="313.0" layoutY="264.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="134.0" style="-fx-background-color: transparent;" text="NUMBER:">
+         <font>
+            <Font name="Serif Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="313.0" layoutY="333.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="134.0" style="-fx-background-color: transparent;" text="ADRESS:">
+         <font>
+            <Font name="Serif Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="313.0" layoutY="406.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="134.0" style="-fx-background-color: transparent;" text="EMAIL:">
+         <font>
+            <Font name="Serif Bold" size="22.0" />
+         </font>
+      </Button>
+      <TextField layoutX="435.0" layoutY="205.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField layoutX="435.0" layoutY="278.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField layoutX="435.0" layoutY="347.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField layoutX="435.0" layoutY="420.0" prefHeight="26.0" prefWidth="180.0" />
+      <Button fx:id="C_Home" ellipsisString="" layoutX="563.0" layoutY="464.0" mnemonicParsing="false" onAction="#C_Home" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: dark grey;" text="Button">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../home.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="update_cust_profile" ellipsisString="" layoutX="341.0" layoutY="467.0" mnemonicParsing="false" onAction="#update_cust_profile" prefHeight="46.0" prefWidth="78.0" style="-fx-background-color: dark grey;" text="UPDATE" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

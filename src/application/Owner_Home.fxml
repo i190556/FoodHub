@@ -38,7 +38,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Button layoutX="14.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="PROFILE" textFill="WHITE">
+      <Button fx:id="view_owner_profile" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" onAction="#view_owner_profile" style="-fx-background-color: transparent;" text="PROFILE" textFill="WHITE">
          <font>
             <Font name="Serif Bold" size="17.0" />
          </font>
@@ -48,7 +48,7 @@
             <Font name="Serif Bold" size="17.0" />
          </font>
       </Button>
-      <Button layoutX="535.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="MY STORE" textFill="WHITE">
+      <Button fx:id="view_business_profile" layoutX="535.0" layoutY="21.0" mnemonicParsing="false" onAction="#view_business_profile" style="-fx-background-color: transparent;" text="MY STORE" textFill="WHITE">
          <font>
             <Font name="Serif Bold" size="17.0" />
          </font>
