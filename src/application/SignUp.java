@@ -6,6 +6,7 @@ public class SignUp {
 	private String Name;
 	private String Address;
 	private String Email;
+	
 	private String ID;
 	private String Password;
 	
@@ -28,6 +29,15 @@ public class SignUp {
 		setPassword(pass);
 	}
 
+	public void Create_Profile(String cont, String nam, String add, String emai, String id, String pass) {
+		setContact(cont);
+		setName(nam);
+		setAddress(add);
+		setEmail(emai);
+		setID(id);
+		setPassword(pass);
+	}
+	
 	public String getContact() {
 		return Contact;
 	}

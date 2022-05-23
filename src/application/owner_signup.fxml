@@ -20,35 +20,35 @@
             <Image url="@../../edit.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="322.0" layoutY="54.0" prefHeight="118.0" prefWidth="355.0" text="Enter Your Information">
+      <Label layoutX="322.0" layoutY="14.0" prefHeight="118.0" prefWidth="355.0" text="Enter Your Information">
          <font>
             <Font name="SansSerif Regular" size="33.0" />
          </font>
       </Label>
-      <Label layoutX="182.0" layoutY="172.0" prefHeight="34.0" prefWidth="78.0" text="Name: ">
+      <Label layoutX="182.0" layoutY="132.0" prefHeight="34.0" prefWidth="78.0" text="Name: ">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="180.0" layoutY="350.0" prefHeight="34.0" prefWidth="95.0" text="Email:">
+      <Label layoutX="180.0" layoutY="310.0" prefHeight="34.0" prefWidth="95.0" text="Email:">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="180.0" layoutY="290.0" prefHeight="34.0" prefWidth="95.0" text="Address:">
+      <Label layoutX="180.0" layoutY="250.0" prefHeight="34.0" prefWidth="95.0" text="Address:">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="180.0" layoutY="230.0" prefHeight="34.0" prefWidth="102.0" text="Number:">
+      <Label layoutX="180.0" layoutY="190.0" prefHeight="34.0" prefWidth="102.0" text="Number:">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <TextField layoutX="339.0" layoutY="177.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="237.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="297.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="357.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField layoutX="339.0" layoutY="137.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField layoutX="339.0" layoutY="197.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField layoutX="339.0" layoutY="257.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField layoutX="339.0" layoutY="317.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
       <Button fx:id="Owner_Register" layoutX="442.0" layoutY="414.0" mnemonicParsing="false" onAction="#O_signup_success" prefHeight="65.0" prefWidth="68.0" style="-fx-background-color: dark grey;">
          <graphic>
             <ImageView fitHeight="68.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
@@ -58,5 +58,11 @@
             </ImageView>
          </graphic>
       </Button>
+      <TextField layoutX="338.0" layoutY="366.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <Label layoutX="172.0" layoutY="362.0" prefHeight="34.0" prefWidth="117.0" text="Password: ">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

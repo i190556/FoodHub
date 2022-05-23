@@ -30,7 +30,7 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="180.0" layoutY="350.0" prefHeight="34.0" prefWidth="95.0" text="Timings:">
+      <Label layoutX="180.0" layoutY="350.0" prefHeight="34.0" prefWidth="95.0" text="Email:">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>

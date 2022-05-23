@@ -37,14 +37,17 @@
       </Label>
       <TextField layoutX="339.0" layoutY="177.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
       <TextField layoutX="339.0" layoutY="237.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <Button fx:id="b_update" layoutX="436.0" layoutY="317.0" mnemonicParsing="false" onAction="#b_update" prefHeight="65.0" prefWidth="68.0" style="-fx-background-color: dark grey;">
-         <graphic>
-            <ImageView fitHeight="68.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../signup.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
+      <Button fx:id="b_update" layoutX="436.0" layoutY="317.0" mnemonicParsing="false" onAction="#b_update" prefHeight="65.0" prefWidth="68.0" style="-fx-background-color: dark grey;" />
+      <Label layoutX="180.0" layoutY="293.0" prefHeight="34.0" prefWidth="102.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField layoutX="339.0" layoutY="297.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <ImageView fitHeight="68.0" fitWidth="70.0" layoutX="454.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../signup.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

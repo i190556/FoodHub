@@ -6,6 +6,7 @@ public class BusinessOwner {
 	private String Name;
 	private String Address;
 	private String Email;
+	
 	private String ID;
 	private String Password;
 	
@@ -15,6 +16,7 @@ public class BusinessOwner {
 		setName("");
 		setAddress("");
 		setEmail("");
+		
 		setID("");
 		setPassword("");
 	}
@@ -24,6 +26,24 @@ public class BusinessOwner {
 		setName(nam);
 		setAddress(add);
 		setEmail(emai);
+		
+		setID(id);
+		setPassword(pass);
+	}
+
+	public void UpdateProfile(String cont, String nam, String add, String emai) {
+		setContact(cont);
+		setName(nam);
+		setAddress(add);
+		setEmail(emai);
+	}
+
+	public void CreateProfile(String cont, String nam, String add, String emai, String id, String pass) {
+		setContact(cont);
+		setName(nam);
+		setAddress(add);
+		setEmail(emai);
+		
 		setID(id);
 		setPassword(pass);
 	}
