@@ -115,114 +115,113 @@ public class BusinessOwner {
 		return business.getContact();
 	}
 
-	public void setContact(String contact) {
-		Contact = contact;
+	public void Bus_setContact(String contact) {
+		business.setContact(contact);
 	}
 
-	public String getName() {
-		return Name;
+	public String Bus_getName() {
+		return business.getName();
 	}
 
-	public void setName(String name) {
-		Name = name;
+	public void Bus_setName(String name) {
+		business.setName(name);
 	}
 
-	public String getAddress() {
-		return Address;
+	public String Bus_getAddress() {
+		return business.getAddress();
 	}
 
-	public void setAddress(String address) {
-		Address = address;
+	public void Bus_setAddress(String address) {
+		business.setAddress(address);
 	}
 
-	public String getEmail() {
-		return Email;
+	public String Bus_getEmail() {
+		return business.getEmail();
 	}
 
-	public void setEmail(String email) {
-		Email = email;
+	public void Bus_setEmail(String email) {
+		business.setEmail(email);
 	}
-	public int getB_ID() {
-		return B_ID;
-	}
-
-	public void setB_ID(int b_ID) {
-		B_ID = b_ID;
+	public int Bus_getB_ID() {
+		return business.getB_ID();
 	}
 
-	public int getStatus() {
-		return status;
+	public void Bus_setB_ID(int b_ID) {
+		business.setB_ID(b_ID);
 	}
 
-	public void setStatus(int status) {
-		this.status = status;
+	public int Bus_getStatus() {
+		return business.getStatus();
+	}
+
+	public void Bus_setStatus(int status) {
+		business.setStatus(status);
 	}
 
 	//---------------------------------MENU CLASS---------------------------------//
 	public Menu getMenu() {
-		return menu;
+		return business.getMenu();
 	}
 
 	public void setMenu(Menu menu) {
-		this.menu = menu;
+		business.setMenu(menu);
 	}
 	
 
 	public void Set_MenuItem(String it, int pri) {
-		menu.setItem(it);
-		menu.setPrice(pri);
+		business.Set_MenuItem(it, pri);
 	}
 	
 	public String getItem(int index) {
-		return menu.getItem(index);
+		return business.getItem(index);
 	}
 	public void setItem(String item) {
-		menu.setItem(item);
+		business.setItem(item);
 	}
 	public int getPrice(int index) {
-		return menu.getPrice(index);
+		return business.getPrice(index);
 	}
 	public void setPrice(int price) {
-		menu.setPrice(price);
+		business.setPrice(price);
 	}
 
 	//---------------------------------ORDER CLASS---------------------------------//
 
 	public Order getOrder() {
-		return order;
+		return business.getOrder();
 	}
 
 	public void setOrder(Order order) {
-		this.order = order;
+		business.setOrder(order);
 	}
 	
 	public void Order_Set_OrderItem(String it, int pri, int id) {
-		order.Set_OrderItem(it, pri, id);
+		business.Order_Set_OrderItem(it, pri, id);
 	}
 	
 	public String Order_getItem(int index) {
-		return order.getItem(index);
+		return business.Order_getItem(index);
 	}
 	public void Order_setItem(String item) {
-		order.setItem(item);
+		business.Order_setItem(item);
 	}
 	public int Order_getPrice(int index) {
-		return order.getPrice(index);
+		return business.Order_getPrice(index);
 	}
 	public void Order_setPrice(int price) {
-		order.setPrice(price);
+		business.Order_setPrice(price);
 	}
 	public int Order_getTotalprice() {
-		return order.getTotalprice();
+		return business.Order_getTotalprice();
 	}
 	public void Order_setTotalprice(int totalprice) {
-		order.setTotalprice(totalprice);
+		business.Order_setTotalprice(totalprice);
 	}
 	public int Order_getCus_id() {
-		return order.getCus_id();
+		return business.Order_getCus_id();
 	}
 	public void Order_setCus_id(int cus_id) {
-		order.setCus_id(cus_id);
+		business.Order_setCus_id(cus_id);
 	}
 
 }

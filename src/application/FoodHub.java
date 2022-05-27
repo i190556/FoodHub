@@ -4,71 +4,69 @@ import java.util.ArrayList;
 
 public class FoodHub {
 
-	private SignUp signup;
 	private ArrayList<Feedback> feedback;
 	private ArrayList<Customer> customer;
 	private ArrayList<BusinessOwner> bus_Owner;
-	private ArrayList<Business> business;
 	
-	public FoodHub(SignUp signup, Feedback feedback, Customer customer, BusinessOwner bus_Owner, Business business,
-			Cart cart, Order order, Menu menu) {
-		super();
-		this.signup = signup;
-		this.feedback = feedback;
-		this.customer = customer;
-		this.bus_Owner = bus_Owner;
-		this.business = business;
-		this.cart = cart;
-		this.order = order;
-		this.menu = menu;
+	public FoodHub() {
+		feedback = new ArrayList<Feedback>();
+		customer = new ArrayList<Customer>();
+		bus_Owner = new ArrayList<BusinessOwner>();
 	}
-	public SignUp getSignup() {
-		return signup;
+	public FoodHub(Feedback feed, Customer cust, BusinessOwner bus_O) {
+		feedback.add(feed);
+		customer.add(cust);
+		bus_Owner.add(bus_O);
 	}
-	public void setSignup(SignUp signup) {
-		this.signup = signup;
-	}
-	public Feedback getFeedback() {
+	public ArrayList<Feedback> getFeedback() {
 		return feedback;
 	}
-	public void setFeedback(Feedback feedback) {
+	public void setFeedback(ArrayList<Feedback> feedback) {
 		this.feedback = feedback;
 	}
-	public Customer getCustomer() {
+	public ArrayList<Customer> getCustomer() {
 		return customer;
 	}
-	public void setCustomer(Customer customer) {
+	public void setCustomer(ArrayList<Customer> customer) {
 		this.customer = customer;
 	}
-	public BusinessOwner getBus_Owner() {
+	public ArrayList<BusinessOwner> getBus_Owner() {
 		return bus_Owner;
 	}
-	public void setBus_Owner(BusinessOwner bus_Owner) {
+	public void setBus_Owner(ArrayList<BusinessOwner> bus_Owner) {
 		this.bus_Owner = bus_Owner;
-	}
-	public Business getBusiness() {
-		return business;
-	}
-	public void setBusiness(Business business) {
-		this.business = business;
-	}
-	public Cart getCart() {
-		return cart;
-	}
-	public void setCart(Cart cart) {
-		this.cart = cart;
-	}
-	public Order getOrder() {
-		return order;
-	}
-	public void setOrder(Order order) {
-		this.order = order;
-	}
-	public Menu getMenu() {
-		return menu;
-	}
-	public void setMenu(Menu menu) {
-		this.menu = menu;
-	}
+	}	
+	//-------------------------------------CLASSES---------------------------------------------------//
 	
+	//=====================================FEEDBACK===================================================//
+
+	public void StoreFeedback(Feedback feed) {
+		feedback.add(feed);
+	}
+	public Feedback getFeedback(int index) {
+		return feedback.get(index);
+	}
+	public void setFeedback(int index, Feedback feed) {
+		feedback.set(index, feed);
+	}
+	//=====================================CUSTOMER===================================================//
+	public void Cust_CreateProfile(Customer cust) {
+		customer.add(cust);
+	}
+	public Customer getCustomer(int index) {
+		return customer.get(index);
+	}
+	public void setCustomer(int index, Customer cust) {
+		customer.set(index, cust);
+	}
+	//=====================================Business OWner===================================================//
+	public void Bus_CreateProfile(BusinessOwner bus_O) {
+		bus_Owner.add(bus_O);
+	}
+	public BusinessOwner getBusiness_Owner(int index) {
+		return bus_Owner.get(index);
+	}
+	public void setBusiness_Owner(int index, BusinessOwner bus_O) {
+		bus_Owner.set(index, bus_O);
+	}
 }
