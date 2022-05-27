@@ -33,14 +33,7 @@ public class Customer {
 		setID(id);
 		setPassword(pass);
 	}
-
-	public void UpdateProfile(String cont, String nam, String add, String emai) {
-		setContact(cont);
-		setName(nam);
-		setAddress(add);
-		setEmail(emai);
-	}
-
+	
 	public void CreateProfile(String cont, String nam, String add, String emai, int id, String pass) {
 		setContact(cont);
 		setName(nam);
@@ -49,6 +42,13 @@ public class Customer {
 		
 		setID(id);
 		setPassword(pass);
+	}
+
+	public void UpdateProfile(String cont, String nam, String add, String emai) {
+		setContact(cont);
+		setName(nam);
+		setAddress(add);
+		setEmail(emai);
 	}
 
 	public String getContact() {
