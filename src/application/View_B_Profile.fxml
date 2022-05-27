@@ -44,18 +44,18 @@
             <Font name="Serif Bold" size="30.0" />
          </font>
       </Button>
-      <Button layoutX="325.0" layoutY="190.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="106.0" style="-fx-background-color: transparent;" text="NAME:">
+      <Button layoutX="325.0" layoutY="160.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="106.0" style="-fx-background-color: transparent;" text="NAME:">
          <font>
             <Font name="Serif Bold" size="22.0" />
          </font>
       </Button>
-      <Button layoutX="313.0" layoutY="257.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="134.0" style="-fx-background-color: transparent;" text="NUMBER:">
+      <Button layoutX="313.0" layoutY="217.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="134.0" style="-fx-background-color: transparent;" text="NUMBER:">
          <font>
             <Font name="Serif Bold" size="22.0" />
          </font>
       </Button>
-      <TextField layoutX="435.0" layoutY="205.0" prefHeight="26.0" prefWidth="180.0" />
-      <TextField layoutX="435.0" layoutY="271.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField layoutX="435.0" layoutY="175.0" prefHeight="26.0" prefWidth="180.0" text="my kitchen" />
+      <TextField layoutX="435.0" layoutY="231.0" prefHeight="26.0" prefWidth="180.0" text="03001234567" />
       <Button fx:id="O_Home" ellipsisString="" layoutX="563.0" layoutY="464.0" mnemonicParsing="false" onAction="#O_Home" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: dark grey;" text="Button">
          <graphic>
             <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
@@ -70,21 +70,33 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="b_open" ellipsisString="" layoutX="341.0" layoutY="378.0" mnemonicParsing="false" onAction="#b_open" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: dark grey;" text="OPEN STORE" underline="true">
+      <Button fx:id="b_open" ellipsisString="" layoutX="341.0" layoutY="328.0" mnemonicParsing="false" onAction="#b_open" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: dark grey;" text="OPEN STORE" underline="true">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="b_close" ellipsisString="" layoutX="504.0" layoutY="378.0" mnemonicParsing="false" onAction="#b_close" prefHeight="46.0" prefWidth="117.0" style="-fx-background-color: dark grey;" text="CLOSE STORE" underline="true">
+      <Button fx:id="b_close" ellipsisString="" layoutX="504.0" layoutY="328.0" mnemonicParsing="false" onAction="#b_close" prefHeight="46.0" prefWidth="117.0" style="-fx-background-color: dark grey;" text="CLOSE STORE" underline="true">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="306.0" layoutY="319.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="143.0" style="-fx-background-color: transparent;" text="STORE IS:">
+      <Button layoutX="306.0" layoutY="279.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="143.0" style="-fx-background-color: transparent;" text="STORE IS:">
          <font>
             <Font name="Serif Bold" size="22.0" />
          </font>
       </Button>
-      <TextField layoutX="435.0" layoutY="333.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField layoutX="435.0" layoutY="293.0" prefHeight="26.0" prefWidth="180.0" text="OPEN" />
+      <Button layoutX="306.0" layoutY="374.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="143.0" style="-fx-background-color: transparent;" text="ADDRESS:">
+         <font>
+            <Font name="Serif Bold" size="22.0" />
+         </font>
+      </Button>
+      <TextField layoutX="435.0" layoutY="388.0" prefHeight="26.0" prefWidth="180.0" text="my steet" />
+      <Button layoutX="298.0" layoutY="414.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="143.0" style="-fx-background-color: transparent;" text="EMAIL:">
+         <font>
+            <Font name="Serif Bold" size="22.0" />
+         </font>
+      </Button>
+      <TextField layoutX="435.0" layoutY="428.0" prefHeight="26.0" prefWidth="180.0" text="kitchen@gmail" />
    </children>
 </AnchorPane>

@@ -112,14 +112,26 @@ public class MainController {
 	public Button b_close;
 	
 	
+	@FXML
+	public Button aboutus;
+	
+	@FXML
+	public Button contact;
 	
 	
+	
 	@FXML
-	public TextField Username;
+	public TextField customer_signup_name;
 	@FXML
-	public TextField Password;
+	public TextField customer_signup_number;
 	@FXML
-	public Label DisplayCorrect;
+	public TextField customer_signup_address;
+	@FXML
+	public TextField customer_signup_email;
+	@FXML
+	public TextField customer_signup_password;
+	
+	
 	
 		//Main Menu
 	
@@ -558,6 +570,42 @@ public class MainController {
 	    
 	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
 	     getResource("Store_Close.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+
+	@FXML
+	 public void aboutus() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) aboutus.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("AboutUs.fxml")));
+		 Stage primaryStage1 = new Stage();
+		 primaryStage1.setScene(quizScene);
+		 primaryStage1.show();
+	
+	    }
+	
+
+	@FXML
+	 public void contact() throws Exception 
+		{
+		
+		
+		Stage stage = (Stage) contact.getScene().getWindow();
+	     
+	    stage.close();
+	    
+	     Scene quizScene = new Scene(FXMLLoader.load(getClass().
+	     getResource("Contact.fxml")));
 		 Stage primaryStage1 = new Stage();
 		 primaryStage1.setScene(quizScene);
 		 primaryStage1.show();

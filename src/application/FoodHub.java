@@ -5,11 +5,13 @@ import java.util.ArrayList;
 public class FoodHub {
 
 	private SignUp signup;
+
 	private ArrayList<Feedback> feedback;
 	private ArrayList<Customer> customer;
 	private ArrayList<BusinessOwner> bus_Owner;
 	private ArrayList<Business> business;
 	
+
 	public FoodHub(SignUp signup, Feedback feedback, Customer customer, BusinessOwner bus_Owner, Business business,
 			Cart cart, Order order, Menu menu) {
 		super();
