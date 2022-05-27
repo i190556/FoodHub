@@ -43,7 +43,9 @@ public class BusinessOwner {
 		setPassword(pass);
 	}
 
+
 	public void UpdateProfile(String cont, String nam, String add, String emai) {
+
 		setContact(cont);
 		setName(nam);
 		setAddress(add);

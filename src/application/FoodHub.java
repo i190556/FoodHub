@@ -4,15 +4,21 @@ import java.util.ArrayList;
 
 public class FoodHub {
 
+
+
+
 	private ArrayList<Feedback> feedback;
 	private ArrayList<Customer> customer;
 	private ArrayList<BusinessOwner> bus_Owner;
 	
+
 	public FoodHub() {
 		feedback = new ArrayList<Feedback>();
 		customer = new ArrayList<Customer>();
 		bus_Owner = new ArrayList<BusinessOwner>();
-	}
+ }
+  
+  
 	public FoodHub(Feedback feed, Customer cust, BusinessOwner bus_O) {
 		feedback.add(feed);
 		customer.add(cust);
