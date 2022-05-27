@@ -9,6 +9,7 @@ public class Order {
 	private int totalprice;
 
 	private int Cus_id;
+	private int B_id;
 	
 	public Order() {
 		item = new ArrayList<String>();
@@ -50,6 +51,12 @@ public class Order {
 	}
 	public void setCus_id(int cus_id) {
 		Cus_id = cus_id;
+	}
+	public int getB_id() {
+		return B_id;
+	}
+	public void setB_id(int b_id) {
+		B_id = b_id;
 	}
 
 }

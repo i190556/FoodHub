@@ -1,15 +1,17 @@
 package application;
 
+import java.util.ArrayList;
+
 public class FoodHub {
 
 	private SignUp signup;
-	private Feedback feedback;
-	private Customer customer;
-	private BusinessOwner bus_Owner;
-	private Business business;
-	private Cart cart;
-	private Order order;
-	private Menu menu;
+
+	private ArrayList<Feedback> feedback;
+	private ArrayList<Customer> customer;
+	private ArrayList<BusinessOwner> bus_Owner;
+	private ArrayList<Business> business;
+	
+
 	public FoodHub(SignUp signup, Feedback feedback, Customer customer, BusinessOwner bus_Owner, Business business,
 			Cart cart, Order order, Menu menu) {
 		super();

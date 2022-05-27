@@ -8,6 +8,8 @@ public class Business {
 	private String Address;
 	private String Email;
 	
+	private int status;
+	
 	private Menu menu;
 	private Order order;
 	
@@ -18,6 +20,7 @@ public class Business {
 		setName("");
 		setAddress("");
 		setEmail("");
+		setStatus(0);
 	}
 
 	public Business(String cont, String nam, String add, String emai,int id) {
@@ -26,6 +29,7 @@ public class Business {
 		setName(nam);
 		setAddress(add);
 		setEmail(emai);
+		setStatus(1);
 	}
 
 	public void BusinessDetails(String cont, String nam, String add, String emai,int id) {
@@ -34,6 +38,7 @@ public class Business {
 		setName(nam);
 		setAddress(add);
 		setEmail(emai);
+		setStatus(1);
 	}
 	
 	public String getContact() {
@@ -73,6 +78,14 @@ public class Business {
 
 	public void setB_ID(int b_ID) {
 		B_ID = b_ID;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
 	}
 
 	//---------------------------------MENU CLASS---------------------------------//
