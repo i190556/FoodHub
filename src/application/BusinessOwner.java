@@ -7,7 +7,7 @@ public class BusinessOwner {
 	private String Address;
 	private String Email;
 	
-	private String ID;
+	private int ID;
 	private String Password;
 	
 
@@ -17,11 +17,11 @@ public class BusinessOwner {
 		setAddress("");
 		setEmail("");
 		
-		setID("");
+		setID(0);
 		setPassword("");
 	}
 
-	public BusinessOwner(String cont, String nam, String add, String emai, String id, String pass) {
+	public BusinessOwner(String cont, String nam, String add, String emai, int id, String pass) {
 		setContact(cont);
 		setName(nam);
 		setAddress(add);
@@ -38,7 +38,7 @@ public class BusinessOwner {
 		setEmail(emai);
 	}
 
-	public void CreateProfile(String cont, String nam, String add, String emai, String id, String pass) {
+	public void CreateProfile(String cont, String nam, String add, String emai, int id, String pass) {
 		setContact(cont);
 		setName(nam);
 		setAddress(add);
@@ -80,11 +80,11 @@ public class BusinessOwner {
 		Email = email;
 	}
 
-	public String getID() {
+	public int getID() {
 		return ID;
 	}
 
-	public void setID(String iD) {
+	public void setID(int iD) {
 		ID = iD;
 	}
 

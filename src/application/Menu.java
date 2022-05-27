@@ -1,35 +1,37 @@
 package application;
 
+import java.util.ArrayList;
+
 public class Menu {
 
-	private String item;
-	private int price;
+	private ArrayList<String> item;
+	private ArrayList<Integer> price;
 	
 	public Menu() {
-		setItem("");
-		setPrice(0);
+		item = new ArrayList<String>();
+		price = new ArrayList<Integer>();
 	}
 	public Menu(String it, int pri) {
+		item.add(it);
+		price.add(pri);
+	}
+	
+	public void Add_MenuItem(String it, int pri) {
 		setItem(it);
 		setPrice(pri);
 	}
 	
-	public void Set_MenuItem(String it, int pri) {
-		setItem(it);
-		setPrice(pri);
+	public String getItem(int index) {
+		return item.get(index);
 	}
-	
-	public String getItem() {
-		return item;
+	public void setItem(String it) {
+		item.add(it);
 	}
-	public void setItem(String item) {
-		this.item = item;
+	public int getPrice(int index) {
+		return price.get(index);
 	}
-	public int getPrice() {
-		return price;
-	}
-	public void setPrice(int price) {
-		this.price = price;
+	public void setPrice(int pri) {
+		price.add(pri);
 	}
 
 }

@@ -90,14 +90,14 @@ public class Business {
 		menu.setPrice(pri);
 	}
 	
-	public String getItem() {
-		return menu.getItem();
+	public String getItem(int index) {
+		return menu.getItem(index);
 	}
 	public void setItem(String item) {
 		menu.setItem(item);
 	}
-	public int getPrice() {
-		return menu.getPrice();
+	public int getPrice(int index) {
+		return menu.getPrice(index);
 	}
 	public void setPrice(int price) {
 		menu.setPrice(price);
@@ -117,14 +117,14 @@ public class Business {
 		order.Set_OrderItem(it, pri, id);
 	}
 	
-	public String Order_getItem() {
-		return order.getItem();
+	public String Order_getItem(int index) {
+		return order.getItem(index);
 	}
 	public void Order_setItem(String item) {
 		order.setItem(item);
 	}
-	public int Order_getPrice() {
-		return order.getPrice();
+	public int Order_getPrice(int index) {
+		return order.getPrice(index);
 	}
 	public void Order_setPrice(int price) {
 		order.setPrice(price);

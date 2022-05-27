@@ -7,7 +7,7 @@ public class Customer {
 	private String Address;
 	private String Email;
 	
-	private String ID;
+	private int ID;
 	private String Password;
 
 	private Cart cart;
@@ -20,11 +20,11 @@ public class Customer {
 		setAddress("");
 		setEmail("");
 		
-		setID("");
+		setID(0);
 		setPassword("");
 	}
 
-	public Customer(String cont, String nam, String add, String emai, String id, String pass) {
+	public Customer(String cont, String nam, String add, String emai, int id, String pass) {
 		setContact(cont);
 		setName(nam);
 		setAddress(add);
@@ -41,7 +41,7 @@ public class Customer {
 		setEmail(emai);
 	}
 
-	public void CreateProfile(String cont, String nam, String add, String emai, String id, String pass) {
+	public void CreateProfile(String cont, String nam, String add, String emai, int id, String pass) {
 		setContact(cont);
 		setName(nam);
 		setAddress(add);
@@ -83,11 +83,11 @@ public class Customer {
 		Email = email;
 	}
 
-	public String getID() {
+	public int getID() {
 		return ID;
 	}
 
-	public void setID(String iD) {
+	public void setID(int iD) {
 		ID = iD;
 	}
 
@@ -99,6 +99,7 @@ public class Customer {
 		Password = password;
 	}
 
+
 	//---------------------------------CART CLASS---------------------------------//
 	public Cart getCart() {
 		return cart;
@@ -109,18 +110,17 @@ public class Customer {
 	}
 	
 	public void Set_Cart(String it, int pri) {
-		cart.setItem(it);
-		cart.setPrice(pri);
+		cart.Set_Cart(it, pri);
 	}
 	
-	public String Cart_getItem() {
-		return cart.getItem();
+	public String Cart_getItem(int index) {
+		return cart.getItem(index);
 	}
 	public void Cart_setItem(String item) {
 		cart.setItem(item);
 	}
-	public int Cart_getPrice() {
-		return cart.getPrice();
+	public int Cart_getPrice(int index) {
+		return cart.getPrice(index);
 	}
 	public void Cart_setPrice(int price) {
 		cart.setPrice(price);
@@ -146,14 +146,14 @@ public class Customer {
 		order.Set_OrderItem(it, pri, id);
 	}
 	
-	public String Order_getItem() {
-		return order.getItem();
+	public String Order_getItem(int index) {
+		return order.getItem(index);
 	}
 	public void Order_setItem(String item) {
 		order.setItem(item);
 	}
-	public int Order_getPrice() {
-		return order.getPrice();
+	public int Order_getPrice(int index) {
+		return order.getPrice(index);
 	}
 	public void Order_setPrice(int price) {
 		order.setPrice(price);
