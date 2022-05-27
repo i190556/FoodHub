@@ -8,6 +8,8 @@ public class Business {
 	private String Address;
 	private String Email;
 	
+	private int status;
+	
 	private Menu menu;
 	private Order order;
 	
@@ -18,6 +20,7 @@ public class Business {
 		setName("");
 		setAddress("");
 		setEmail("");
+		setStatus(0);
 	}
 
 	public Business(String cont, String nam, String add, String emai,int id) {
@@ -26,6 +29,7 @@ public class Business {
 		setName(nam);
 		setAddress(add);
 		setEmail(emai);
+		setStatus(1);
 	}
 
 	public void BusinessDetails(String cont, String nam, String add, String emai,int id) {
@@ -34,6 +38,7 @@ public class Business {
 		setName(nam);
 		setAddress(add);
 		setEmail(emai);
+		setStatus(1);
 	}
 	
 	public String getContact() {
@@ -75,6 +80,14 @@ public class Business {
 		B_ID = b_ID;
 	}
 
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
 	//---------------------------------MENU CLASS---------------------------------//
 	public Menu getMenu() {
 		return menu;
@@ -90,14 +103,14 @@ public class Business {
 		menu.setPrice(pri);
 	}
 	
-	public String getItem() {
-		return menu.getItem();
+	public String getItem(int index) {
+		return menu.getItem(index);
 	}
 	public void setItem(String item) {
 		menu.setItem(item);
 	}
-	public int getPrice() {
-		return menu.getPrice();
+	public int getPrice(int index) {
+		return menu.getPrice(index);
 	}
 	public void setPrice(int price) {
 		menu.setPrice(price);
@@ -117,14 +130,14 @@ public class Business {
 		order.Set_OrderItem(it, pri, id);
 	}
 	
-	public String Order_getItem() {
-		return order.getItem();
+	public String Order_getItem(int index) {
+		return order.getItem(index);
 	}
 	public void Order_setItem(String item) {
 		order.setItem(item);
 	}
-	public int Order_getPrice() {
-		return order.getPrice();
+	public int Order_getPrice(int index) {
+		return order.getPrice(index);
 	}
 	public void Order_setPrice(int price) {
 		order.setPrice(price);

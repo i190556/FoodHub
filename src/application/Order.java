@@ -1,21 +1,24 @@
 package application;
 
+import java.util.ArrayList;
+
 public class Order {
 
-	private String item;
-	private int price;
+	private ArrayList<String> item;
+	private ArrayList<Integer> price;
 	private int totalprice;
-	
+
 	private int Cus_id;
+	private int B_id;
 	
 	public Order() {
-		setItem("");
-		setPrice(0);
+		item = new ArrayList<String>();
+		price = new ArrayList<Integer>();
 		setTotalprice(0);
 	}
 	public Order(String it, int pri, int tot) {
-		setItem(it);
-		setPrice(pri);
+		item.add(it);
+		price.add(pri);
 		setTotalprice(tot);
 	}
 	
@@ -25,17 +28,17 @@ public class Order {
 		setCus_id(id);
 	}
 	
-	public String getItem() {
-		return item;
+	public String getItem(int index) {
+		return item.get(index);
 	}
-	public void setItem(String item) {
-		this.item = item;
+	public void setItem(String it) {
+		item.add(it);
 	}
-	public int getPrice() {
-		return price;
+	public int getPrice(int index) {
+		return price.get(index);
 	}
-	public void setPrice(int price) {
-		this.price = price;
+	public void setPrice(int pri) {
+		price.add(pri);
 	}
 	public int getTotalprice() {
 		return totalprice;
@@ -48,6 +51,12 @@ public class Order {
 	}
 	public void setCus_id(int cus_id) {
 		Cus_id = cus_id;
+	}
+	public int getB_id() {
+		return B_id;
+	}
+	public void setB_id(int b_id) {
+		B_id = b_id;
 	}
 
 }
