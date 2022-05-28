@@ -33,6 +33,19 @@ public class Customer {
 		setID(id);
 		setPassword(pass);
 	}
+
+	public Customer(String cont, String nam, String add, String emai, int id, String pass, Cart car, Order ord) {
+		setContact(cont);
+		setName(nam);
+		setAddress(add);
+		setEmail(emai);
+		
+		setID(id);
+		setPassword(pass);
+		
+		cart = car;
+		order = ord;
+	}
 	
 	public void CreateProfile(String cont, String nam, String add, String emai, int id, String pass) {
 		setContact(cont);
