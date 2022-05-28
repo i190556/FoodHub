@@ -9,12 +9,14 @@ public class FoodHub {
 	private ArrayList<BusinessOwner> bus_Owner;
 	private ArrayList<Business> business;
 	
+
 	public FoodHub() {
 		feedback = new ArrayList<Feedback>();
 		customer = new ArrayList<Customer>();
 		bus_Owner = new ArrayList<BusinessOwner>();
 		bus_Owner = new ArrayList<BusinessOwner>();
 	}
+  
 	public FoodHub(Feedback feed, Customer cust, BusinessOwner bus_O, Business bus) {
 		feedback.add(feed);
 		customer.add(cust);

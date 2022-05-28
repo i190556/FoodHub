@@ -45,10 +45,10 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <TextField layoutX="339.0" layoutY="177.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="237.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="297.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="357.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="b_signup_name" layoutX="339.0" layoutY="177.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="b_signup_number" layoutX="339.0" layoutY="237.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="b_signup_address" layoutX="339.0" layoutY="297.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="b_signup_email" layoutX="339.0" layoutY="357.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
       <Button fx:id="b_signup" layoutX="442.0" layoutY="414.0" mnemonicParsing="false" onAction="#B_signup_success" prefHeight="65.0" prefWidth="68.0" style="-fx-background-color: dark grey;">
          <graphic>
             <ImageView fitHeight="68.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
@@ -58,5 +58,15 @@
             </ImageView>
          </graphic>
       </Button>
+      <Label fx:id="b_number_error" layoutX="632.0" layoutY="234.0" prefHeight="18.0" prefWidth="211.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="b_email_error" layoutX="632.0" layoutY="354.0" prefHeight="18.0" prefWidth="211.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
