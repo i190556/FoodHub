@@ -119,6 +119,19 @@ public class MainController {
 	public Button contact;
 	
 	
+	/////////////////////////////////////////////CUST SIGNUP///////////////////////////////////////
+	
+	@FXML
+	public Label ERROR;
+	
+	@FXML
+	public Label cust_name_error;
+	
+	@FXML
+	public Label cust_number_error;
+	
+	@FXML
+	public Label cust_email_error;
 	
 	@FXML
 	public TextField customer_signup_name;
@@ -130,6 +143,69 @@ public class MainController {
 	public TextField customer_signup_email;
 	@FXML
 	public TextField customer_signup_password;
+	
+	String cust_name;
+	String cust_number;
+	String cust_address;
+	String cust_email;
+	String cust_pw;
+	
+	
+	
+/////////////////////////////////////////////OWNWER SIGNUP///////////////////////////////////////
+	
+
+	@FXML
+	public Label owner_number_error;
+
+	@FXML
+	public Label owner_email_error;
+
+	@FXML
+	public TextField owner_signup_name;
+	@FXML
+	public TextField owner_signup_number;
+	@FXML
+	public TextField owner_signup_address;
+	@FXML
+	public TextField owner_signup_email;
+	@FXML
+	public TextField owner_signup_password;
+
+	String owner_name;
+	String owner_number;
+	String owner_address;
+	String owner_email;
+	String owner_pw;
+	
+	
+	
+
+/////////////////////////////////////////////business SIGNUP///////////////////////////////////////
+
+
+	@FXML
+	public Label b_number_error;
+
+	@FXML
+	public Label b_email_error;
+
+	@FXML
+	public TextField b_signup_name;
+	@FXML
+	public TextField b_signup_number;
+	@FXML
+	public TextField b_signup_address;
+	@FXML
+	public TextField b_signup_email;
+	
+	String b_name;
+	String b_number;
+	String b_address;
+	String b_email;
+	String b_pw;
+	
+	
 	
 	
 	
@@ -204,7 +280,68 @@ public class MainController {
 	 public void C_signup_success() throws Exception 
 		{
 		
+		boolean signup = false;
 		
+				
+		
+		cust_name = customer_signup_name.getText();
+		cust_number =customer_signup_number.getText();
+		cust_address = customer_signup_address.getText();
+		cust_email = customer_signup_email.getText();
+		cust_pw = customer_signup_password.getText();
+		
+		
+		
+		
+		for (int i = 0; i < cust_number.length(); i++)
+		{
+			if (Character.isDigit(cust_number.charAt(i)) == false)
+			{
+				
+				cust_number_error.setText("Invalid Information");
+				
+				customer_signup_number.clear();
+				signup=false;
+				break;
+				
+			}
+		
+			else
+			{
+				signup=true;
+				cust_number_error.setText("");
+			}
+			
+		}
+		
+		
+		
+		if(!cust_email.contains("@"))
+		{
+			signup=false;
+			
+			cust_email_error.setText("Invalid Information");
+			
+			customer_signup_email.clear();
+			
+		}
+		
+		else
+		{			
+			cust_email_error.setText("");
+		}
+		
+		
+		
+		
+		
+		if (signup == true)
+		{
+			System.out.println(cust_name);
+			System.out.println(cust_number);
+			System.out.println(cust_address);
+			System.out.println(cust_email);
+			System.out.println(cust_pw);
 		Stage stage = (Stage) Customer_Register.getScene().getWindow();
 	     
 	    stage.close();
@@ -214,7 +351,14 @@ public class MainController {
 		 Stage primaryStage1 = new Stage();
 		 primaryStage1.setScene(quizScene);
 		 primaryStage1.show();
+		}
+		
 	
+		
+	
+	
+	
+		
 	    }
 	
 	
@@ -241,7 +385,61 @@ public class MainController {
 	 public void O_signup_success() throws Exception 
 		{
 		
+		boolean o_signup = false;
 		
+				
+		
+		owner_name = owner_signup_name.getText();
+		owner_number =owner_signup_number.getText();
+		owner_address = owner_signup_address.getText();
+		owner_email = owner_signup_email.getText();
+		owner_pw = owner_signup_password.getText();
+		
+		for (int i = 0; i < owner_number.length(); i++)
+		{
+			if (Character.isDigit(owner_number.charAt(i)) == false)
+			{
+				
+				owner_number_error.setText("Invalid Information");
+				owner_signup_number.clear();
+				
+				break;
+				
+			}
+		
+			else
+			{
+				o_signup=true;
+				owner_number_error.setText("");
+			}
+			break;
+		}
+		
+		
+		
+		if(!owner_email.contains("@"))
+		{
+			o_signup=false;
+			
+			owner_email_error.setText("Invalid Information");
+			owner_signup_email.clear();
+		}
+		
+		else
+		{			
+			owner_email_error.setText("");
+		}
+		
+		
+		
+		if (o_signup == true)
+		{
+			
+			System.out.println(owner_name);
+			System.out.println(owner_number);
+			System.out.println(owner_address);
+			System.out.println(owner_email);
+			System.out.println(owner_pw);
 		Stage stage = (Stage) Owner_Register.getScene().getWindow();
 	     
 	    stage.close();
@@ -252,6 +450,8 @@ public class MainController {
 		 primaryStage1.setScene(quizScene);
 		 primaryStage1.show();
 	
+		}
+		 
 	    }
 	
 	
@@ -277,7 +477,54 @@ public class MainController {
 	 public void B_signup_success() throws Exception 
 		{
 		
+		boolean bus_signup = false;
 		
+				
+		
+		b_name = b_signup_name.getText();
+		b_number =b_signup_number.getText();
+		b_address = b_signup_address.getText();
+		b_email = b_signup_email.getText();
+		
+		for (int i = 0; i < b_number.length(); i++)
+		{
+			if (Character.isDigit(b_number.charAt(i)) == false)
+			{
+				
+				b_number_error.setText("Invalid Information");
+				b_signup_number.clear();
+				
+				break;
+				
+			}
+		
+			else
+			{
+				bus_signup=true;
+				b_number_error.setText("");
+			}
+			break;
+		}
+		
+		
+		
+		if(!b_email.contains("@"))
+		{
+			bus_signup=false;
+			
+			b_email_error.setText("Invalid Information");
+			b_signup_email.clear();
+		}
+		
+		else
+		{			
+			b_email_error.setText("");
+		}
+		
+		
+		
+		if (bus_signup == true)
+		{
 		Stage stage = (Stage) b_signup.getScene().getWindow();
 	     
 	    stage.close();
@@ -288,6 +535,9 @@ public class MainController {
 		 primaryStage1.setScene(quizScene);
 		 primaryStage1.show();
 	
+		 
+		}
+		
 	    }
 	
 	
