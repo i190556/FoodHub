@@ -7,7 +7,6 @@ public class Business {
 	private String Name;
 	private String Address;
 	private String Email;
-	
 	private int status;
 	
 	private Menu menu;
@@ -30,6 +29,17 @@ public class Business {
 		setAddress(add);
 		setEmail(emai);
 		setStatus(1);
+	}
+	public Business(String cont, String nam, String add, String emai,int id, Menu men, Order ord) {
+		setB_ID(id);
+		setContact(cont);
+		setName(nam);
+		setAddress(add);
+		setEmail(emai);
+		setStatus(1);
+		
+		menu = men;
+		order = ord;
 	}
 
 	public void BusinessDetails(String cont, String nam, String add, String emai,int id) {
