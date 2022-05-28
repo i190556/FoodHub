@@ -45,10 +45,10 @@
             <Font name="System Bold" size="23.0" />
          </font>
       </Label>
-      <TextField layoutX="339.0" layoutY="137.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="197.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="257.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
-      <TextField layoutX="339.0" layoutY="317.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="owner_signup_name" layoutX="339.0" layoutY="137.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="owner_signup_number" layoutX="339.0" layoutY="197.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="owner_signup_address" layoutX="339.0" layoutY="257.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="owner_signup_email" layoutX="339.0" layoutY="317.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
       <Button fx:id="Owner_Register" layoutX="442.0" layoutY="414.0" mnemonicParsing="false" onAction="#O_signup_success" prefHeight="65.0" prefWidth="68.0" style="-fx-background-color: dark grey;">
          <graphic>
             <ImageView fitHeight="68.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
@@ -58,10 +58,20 @@
             </ImageView>
          </graphic>
       </Button>
-      <TextField layoutX="338.0" layoutY="366.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
+      <TextField fx:id="owner_signup_password" layoutX="338.0" layoutY="366.0" prefHeight="26.0" prefWidth="284.0" style="-fx-background-color: grey;" />
       <Label layoutX="172.0" layoutY="362.0" prefHeight="34.0" prefWidth="117.0" text="Password: ">
          <font>
             <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="owner_number_error" layoutX="641.0" layoutY="192.0" prefHeight="30.0" prefWidth="196.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="owner_email_error" layoutX="641.0" layoutY="315.0" prefHeight="30.0" prefWidth="196.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
          </font>
       </Label>
    </children>
